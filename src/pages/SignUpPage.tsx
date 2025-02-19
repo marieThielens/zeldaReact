@@ -179,7 +179,8 @@ function SignUpPage(){
                 </div>
                 </div>
                 <button type="submit" value="Sign Up" className="btn btn-primary col-12 mt-2" 
-                disabled={        !formData.userMail || 
+                disabled={
+                    !formData.userMail || 
                     !formData.userName || 
                     !formData.userPassword || 
                     !formData.confirmUserPassword || 

@@ -13,7 +13,8 @@ function LoginPage(){
         if(email === "marie@mail.com" && passwordUser === "azerty"){
             setSuccess("Connexion réussie !");
             setError('');
-        } else {
+        }
+        else {
             setError("Email ou mot de passe incorrect");
             setSuccess('');
         }
@@ -62,7 +63,7 @@ function LoginPage(){
                             onChange={(e) => setPasswordUser(e.target.value)}
                             placeholder="Password" />
                     </div>
-                    <button type="submit" className="btn btn-primary">Se connecter</button>
+                    <button type="submit" className="btn btn-primary" disabled={!error}>Se connecter</button>
                 </div>
                 </div>
             </form>
